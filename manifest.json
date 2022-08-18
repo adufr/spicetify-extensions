@@ -1,0 +1,9 @@
+[
+  {
+    "name": "QuickAddToPlaylist",
+    "description": "Shortcut for creating playlists",
+    "preview": "screenshot.png",
+    "main": "dist/quick-add-to-playlist.js",
+    "readme": "README.md"
+  }
+]
