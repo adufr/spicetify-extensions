@@ -175,7 +175,7 @@ function initInjectCss (): void {
   if (!body.classList.contains('quick-add-to-playlist--selected-playlist')) {
     style.innerHTML = `
       .quick-add-to-playlist--selected-playlist {
-        background-color: #323959 !important;
+        background-color: #212121 !important;
       }
     `
 
