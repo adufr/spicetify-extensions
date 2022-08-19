@@ -90,8 +90,9 @@ async function main() {
         })
       )
 
-      updateStyle(oldPlaylist.id || null, newPlaylist.id)
+      updateStyle(oldPlaylist? oldPlaylist.id : null, newPlaylist.id)    
       Spicetify.showNotification(`Selected playlist "${newPlaylist.name}"`)
+      await updateTopBar(topBarButton)
     },
     // Enable "Select playlist" only when right-clicking playlists
     ([uri]) => {
@@ -129,6 +130,11 @@ async function isCurrentTrackInSelectedPlaylist (): Promise<boolean> {
 // Update Topbar icon/label
 async function updateTopBar (topBarButton: Spicetify.Topbar.Button): Promise<void> {
   updateTopBarButton(topBarButton, '?')
+
+  // first load: no playlist selected
+  const playlist = getPlaylistFromLocalstorage()
+  if (!playlist) return
+
   await isCurrentTrackInSelectedPlaylist()
     ? updateTopBarButton(topBarButton, '-')
     : updateTopBarButton(topBarButton, '+')
@@ -169,7 +175,7 @@ function initInjectCss (): void {
   if (!body.classList.contains('quick-add-to-playlist--selected-playlist')) {
     style.innerHTML = `
       .quick-add-to-playlist--selected-playlist {
-        background-color: #323959 !important;
+        background-color: #212121 !important;
       }
     `
 
