@@ -13,7 +13,7 @@ async function main() {
   // Wait for Spotify + Spicetify to load
 
   while (!Spicetify?.showNotification) {
-    await new Promise(resolve => setTimeout(resolve, 500))
+    await new Promise(resolve => setTimeout(resolve, 2000))
   }
   
   // Inject CSS
