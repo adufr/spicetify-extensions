@@ -39,11 +39,11 @@ spicetify apply
 
 The extension adds a new option when right-clicking one of your playlist, to select a playlist
 
-![](https://prnt.sc/eIVMioQFd4aG)
+![](https://i.imgur.com/cus8IKU.png)
 
 Once you have selected a playlist, you can use the new topbar button to quickly add/remove the current track to the selected playlist
 
-![](https://prnt.sc/jR194OhmzHtY)
+![](https://i.imgur.com/JrgLaUk.png)
 
 ## Usage Notes
 
