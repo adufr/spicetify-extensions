@@ -9,8 +9,8 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@types/react": "^18.0.17",
-    "@types/react-dom": "^18.0.6",
-    "spicetify-creator": "^1.0.11"
+    "@types/react": "^18.2.9",
+    "@types/react-dom": "^18.2.4",
+    "spicetify-creator": "^1.0.13"
   }
 }
