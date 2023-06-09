@@ -175,7 +175,16 @@ function initInjectCss (): void {
   if (!body.classList.contains('quick-add-to-playlist--selected-playlist')) {
     style.innerHTML = `
       .quick-add-to-playlist--selected-playlist {
-        background-color: #212121 !important;
+        background-color: #1c1818 !important;
+      }
+
+      .quick-add-to-playlist--selected-playlist span.ListRowTitle__LineClamp-sc-1xe2if1-0:after  {
+        position: absolute;
+        right: 10px;
+        content: " (selected 📂)";
+        text-align: right;
+        color: gray;
+        font-size: 11px;
       }
     `
 
@@ -217,11 +226,15 @@ function initInjectCss (): void {
 
 // Add/remove class to playlist's div container
 function updateStyle (oldPlaylistId: string | null, newPlaylistId: string | null): void {
-  const oldPlaylistLink = document.querySelector(`a[href="/playlist/${oldPlaylistId}"`)
-  oldPlaylistLink?.parentElement?.classList.remove('quick-add-to-playlist--selected-playlist')
+  if (oldPlaylistId) {
+    const oldPlaylistLink = document.querySelector(`[aria-describedby="onClickHintspotify:playlist:${oldPlaylistId}"]`)
+    oldPlaylistLink?.parentElement?.parentElement?.classList.remove('quick-add-to-playlist--selected-playlist')
+  }
   
-  const newPlaylistLink = document.querySelector(`a[href="/playlist/${newPlaylistId}"`)
-  newPlaylistLink?.parentElement?.classList.add('quick-add-to-playlist--selected-playlist')
+  if (newPlaylistId) {
+    const newPlaylistLink = document.querySelector(`[aria-describedby="onClickHintspotify:playlist:${newPlaylistId}"]`)
+    newPlaylistLink?.parentElement?.parentElement?.classList.add('quick-add-to-playlist--selected-playlist')
+  }
 }
 
 // ==============================================================================================================
