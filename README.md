@@ -45,14 +45,21 @@ Once you have selected a playlist, you can use the new topbar button to quickly 
 
 ![](https://i.imgur.com/JrgLaUk.png)
 
+This extension is fully compatible all spicetify theme, thanks to its settions section.
+
+You can find it by clicking on your avatar -> Settings -> Quick add to playlist (at the very bottom)
+There, you can customize the "selected playlist" background color to match your current theme!
+
+![](https://i.imgur.com/kjkgPrO.png)
+
 ## Usage Notes
 
-- If you find any issues, please report them on the [issues page.](https://github.com/woosy/spicetify-quick-add-to-playlist/issues/new/choose)
+- If you find any issues, please report them on the [issues page](https://github.com/woosy/spicetify-quick-add-to-playlist/issues/new/choose).
 
 
 ## Upcoming Features
 
-- Settings, to customize the "selected playlist" background color
+- Feel free to suggest any features in the [issues page](https://github.com/woosy/spicetify-quick-add-to-playlist/issues/new/choose).
 
 
 ## Credits
