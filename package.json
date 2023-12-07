@@ -20,7 +20,7 @@
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.1.1",
     "spicetify-creator": "^1.0.13",
-    "typescript": "5.0.4"
+    "typescript": "5.3.3"
   },
   "dependencies": {
     "spcr-settings": "^1.1.0"
