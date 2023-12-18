@@ -27,7 +27,7 @@ function getPlaylistFromLocalstorage (): { name: string, id: string } | null {
 }
 
 async function getIsCurrentTrackInPlaylist (playlistId: string): Promise<boolean> {
-  const track = Spicetify.Player.data.track
+  const track = Spicetify.Player.data.item
 
   const tracks = []
 
@@ -134,7 +134,7 @@ async function main (): Promise<void> {
       if (playlist == null) return
 
       // get current track
-      const track = Spicetify.Player.data.track
+      const track = Spicetify.Player.data.item
       if (track == null) return
 
       // if track isn't in playlist => add it
