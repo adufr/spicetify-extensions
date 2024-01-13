@@ -2,11 +2,17 @@ version: 2
 
 updates:
   - package-ecosystem: npm
-    directory: ./
+    directory: /
     schedule:
       interval: daily
     target-branch: develop
     labels:
       - npm dependencies
-    reviewers:
-      - adufr
+
+  - package-ecosystem: npm
+    directory: /quick-add-to-playlsit
+    schedule:
+      interval: daily
+    target-branch: develop
+    labels:
+      - npm dependencies
