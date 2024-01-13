@@ -1,10 +1,10 @@
 [
   {
     "name": "QuickAddToPlaylist",
-    "description": "Shortcut for creating playlists",
-    "preview": "screenshot.png",
-    "branch": "master",
-    "main": "dist/quick-add-to-playlist.js",
-    "readme": "README.md"
+    "description": "Shortcuts for creating playlists",
+    "preview": "quick-add-to-playlist/screenshot.png",
+    "main": "quick-add-to-playlist/dist/quick-add-to-playlist.js",
+    "readme": "quick-add-to-playlist/README.md",
+    "branch": "master"
   }
 ]

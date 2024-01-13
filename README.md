@@ -1,12 +1,14 @@
-# QuickAddToPlaylist
+# spicetify-extensions
 
-[Spicetify](https://spicetify.app/) extension to add a shortcut for adding current track to a pre-selected playlist.
+This repository contains all of my [Spicetify](https://spicetify.app/) extensions:
+- quick-add-to-playlist
 
 ## Install
 
-Available from the [Spicetify Marketplace](https://github.com/woosy/spicetify-quick-add-to-playlist) or via direct install:
+You can install my extensions automatically from the [Spicetify Marketplace](https://github.com/spicetify/spicetify-marketplace) (recommended), or manually with the following steps:
 
-Copy `quick-add-to-playlist.js` into your [Spicetify](https://github.com/khanhas/spicetify-cli) extensions directory:
+For example, for the "quick-add-to-playlist" extension: 
+Copy `quick-add-to-playlist.js` into your Spicetify extensions directory:
 | **Platform** | **Path**                                                                            |
 |------------|-----------------------------------------------------------------------------------|
 | **Linux**      | `~/.config/spicetify/Extensions` or `$XDG_CONFIG_HOME/.config/spicetify/Extensions/` |
@@ -35,7 +37,7 @@ Then run:
 spicetify apply
 ```
 
-## Usage Details
+## 1. quick-add-to-playlist
 
 The extension adds a new option when right-clicking one of your playlist, to select a playlist
 
@@ -51,19 +53,3 @@ You can find it by clicking on your avatar -> Settings -> Quick add to playlist 
 There, you can customize the "selected playlist" background color to match your current theme!
 
 ![](https://i.imgur.com/kjkgPrO.png)
-
-## Usage Notes
-
-- If you find any issues, please report them on the [issues page](https://github.com/woosy/spicetify-quick-add-to-playlist/issues/new/choose).
-
-
-## Upcoming Features
-
-- Feel free to suggest any features in the [issues page](https://github.com/woosy/spicetify-quick-add-to-playlist/issues/new/choose).
-
-
-## Credits
-
-Made with Spicetify Creator
-
-- https://github.com/FlafyDev/spicetify-creator
