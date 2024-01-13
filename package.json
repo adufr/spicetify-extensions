@@ -1,0 +1,23 @@
+{
+  "name": "spicetify-extensions",
+  "type": "module",
+  "private": true,
+  "description": "Spotify Extensions",
+  "author": "adufr",
+  "homepage": "https://github.com/adufr/spicetify-extensions#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adufr/spicetify-extensions.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adufr/spicetify-extensions.git"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.6.2",
+    "eslint": "^8.56.0"
+  }
+}

@@ -7,7 +7,7 @@ This repository contains all of my [Spicetify](https://spicetify.app/) extension
 
 You can install my extensions automatically from the [Spicetify Marketplace](https://github.com/spicetify/spicetify-marketplace) (recommended), or manually with the following steps:
 
-For example, for the "quick-add-to-playlist" extension: 
+For example, for the "quick-add-to-playlist" extension:
 Copy `quick-add-to-playlist.js` into your Spicetify extensions directory:
 | **Platform** | **Path**                                                                            |
 |------------|-----------------------------------------------------------------------------------|
