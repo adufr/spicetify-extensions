@@ -1,0 +1,18 @@
+version: 2
+
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: daily
+    target-branch: develop
+    labels:
+      - npm dependencies
+
+  - package-ecosystem: npm
+    directory: /quick-add-to-playlsit
+    schedule:
+      interval: daily
+    target-branch: develop
+    labels:
+      - npm dependencies
