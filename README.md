@@ -2,6 +2,7 @@
 
 This repository contains all of my [Spicetify](https://spicetify.app/) extensions:
 - quick-add-to-playlist
+- quick-add-to-queue
 
 ## Install
 
@@ -53,3 +54,9 @@ You can find it by clicking on your avatar -> Settings -> Quick add to playlist 
 There, you can customize the "selected playlist" background color to match your current theme!
 
 ![](https://i.imgur.com/kjkgPrO.png)
+
+## 2. quick-add-to-queue
+
+The extension adds a new button next to the like button to quickly add a song to the queue
+
+![](https://imgur.com/7V6MYeq.png)
