@@ -5,6 +5,16 @@
     "preview": "quick-add-to-playlist/screenshot.png",
     "main": "quick-add-to-playlist/dist/quick-add-to-playlist.js",
     "readme": "quick-add-to-playlist/README.md",
-    "branch": "master"
+    "branch": "master",
+    "tags": ["utility", "playlist"]
+  },
+  {
+    "name": "QuickAddToQueue",
+    "description": "Shortcuts for adding songs to queue",
+    "preview": "quick-add-to-queue/screenshot.png",
+    "main": "quick-add-to-queue/dist/quick-add-to-queue.js",
+    "readme": "quick-add-to-queue/README.md",
+    "branch": "master",
+    "tags": ["utility", "queue"]
   }
 ]
