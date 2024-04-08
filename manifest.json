@@ -2,7 +2,6 @@
   {
     "name": "QuickAddToPlaylist",
     "description": "Shortcuts for creating playlists",
-    "preview": "quick-add-to-playlist/preview.png",
     "main": "quick-add-to-playlist/dist/quick-add-to-playlist.js",
     "readme": "quick-add-to-playlist/README.md",
     "branch": "master",
@@ -11,7 +10,6 @@
   {
     "name": "QuickAddToQueue",
     "description": "Shortcuts for adding songs to queue",
-    "preview": "quick-add-to-queue/preview.png",
     "main": "quick-add-to-queue/dist/quick-add-to-queue.js",
     "readme": "quick-add-to-queue/README.md",
     "branch": "master",
