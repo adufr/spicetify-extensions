@@ -142,6 +142,8 @@ async function main(): Promise<void> {
             const playlist = getPlaylistFromLocalstorage()
             if (!playlist) return
 
+            updateSelectedStyles(null, playlist.id)
+
             // get current track
             const track = Spicetify.Player?.data?.item
             if (!track ) return
