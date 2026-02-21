@@ -72,12 +72,12 @@ async function updateTopbarButton(topbarButton: Spicetify.Topbar.Button): Promis
 }
 
 function updateSelectedStyles(oldPlaylistId: string | null, newPlaylistId: string | null): void {
-    if (oldPlaylistId != null) {
+    if (oldPlaylistId) {
         const oldPlaylistLink = document.querySelector(`[aria-describedby="onClickHintspotify:playlist:${oldPlaylistId}"]`)
         oldPlaylistLink?.parentElement?.parentElement?.classList.remove('quick-add-to-playlist--selected-playlist')
     }
 
-    if (newPlaylistId != null) {
+    if (newPlaylistId) {
         const newPlaylistLink = document.querySelector(`[aria-describedby="onClickHintspotify:playlist:${newPlaylistId}"]`)
         newPlaylistLink?.parentElement?.parentElement?.classList.add('quick-add-to-playlist--selected-playlist')
     }
@@ -140,11 +140,11 @@ async function main(): Promise<void> {
         async (self) => {
             // retrieve previously selected playlist
             const playlist = getPlaylistFromLocalstorage()
-            if (playlist == null) return
+            if (!playlist) return
 
             // get current track
-            const track = Spicetify.Player.data.item
-            if (track == null) return
+            const track = Spicetify.Player?.data?.item
+            if (!track ) return
 
             const playlistUri = `spotify:playlist:${playlist.id}`
 
@@ -238,7 +238,7 @@ async function main(): Promise<void> {
     // Init selected playlist style
 
     const playlist = getPlaylistFromLocalstorage()
-    if (playlist != null) updateSelectedStyles(null, playlist.id)
+    if (playlist) updateSelectedStyles(null, playlist.id)
 }
 
 export default main
