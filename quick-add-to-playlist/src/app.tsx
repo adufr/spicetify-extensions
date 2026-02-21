@@ -47,6 +47,14 @@ async function updateTopbarButton(topbarButton: Spicetify.Topbar.Button): Promis
     topbarButton.icon = ICON_LOADING
     topbarButton.label = 'Loading...'
 
+    // check if there's a track playing
+    const track = Spicetify.Player?.data?.item
+    if (!track) {
+        topbarButton.icon = '?'
+        topbarButton.label = 'Start a track to add it to a playlist'
+        return
+    }
+
     // check if current track is in selected playlist
     const playlist = getPlaylistFromLocalstorage()
     if (playlist === null) return
